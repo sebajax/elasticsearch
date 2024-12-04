@@ -26,7 +26,7 @@ PROJECT_NAME=elasticsearch_kibana
 PORT=5601
 ELASTIC_PORT=9200
 KIBANA_PORT=5601
-ELASTIC_PASSWORD=changeme
+ELASTIC_PASSWORD=elastic
 ```
 
 ### Step 3: Build and Start the Environment
@@ -41,7 +41,7 @@ To stop the containers:
 
 ```bash
 make stop        # Stop and remove the Docker containers
-
+```
 
 ## Project Structure
 ```plaintext
