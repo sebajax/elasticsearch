@@ -18,9 +18,9 @@ services:
     image: docker.elastic.co/kibana/kibana:8.16.1
     container_name: kibana
     environment:
-      - ELASTICSEARCH_HOSTS=http://{PROJECT_NAME}:{ELASTIC_PORT}
-      - ELASTICSEARCH_USERNAME={KIBANA_USERNAME}
-      - ELASTICSEARCH_PASSWORD={KIBANA_PASSWORD}
+      - ELASTICSEARCH_HOSTS=http://${PROJECT_NAME}:${ELASTIC_PORT}
+      - ELASTICSEARCH_USERNAME=${KIBANA_USERNAME}
+      - ELASTICSEARCH_PASSWORD=${KIBANA_PASSWORD}
     ports:
       - '${KIBANA_PORT}:${KIBANA_PORT}'
     depends_on:
